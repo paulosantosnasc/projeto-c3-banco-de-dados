@@ -1,10 +1,10 @@
-💉 Sistema de Monitoramento de Efeitos Adversos (C3 - MongoDB)
+ Sistema de Monitoramento de Efeitos Adversos (C3 - MongoDB)
 
 Este projeto é a entrega da C3 para a disciplina de Banco de Dados, focado na migração de um sistema JavaMySQL (C2) para uma arquitetura JavaMongoDB (C3).
 
 O sistema simula um portal onde usuários podem cadastrar efeitos adversos sentidos após tomarem vacinas, permitindo a geração de relatórios complexos sobre esses dados.
 
-👥 Equipe
+ Equipe
 
 Paulo Henrique do Nascimento
 
@@ -16,13 +16,13 @@ Eduardo Gobbi
 
 Pedro henrique pires
 
-👨‍🏫 Disciplina
+ Disciplina
 
 Matéria Banco de Dados
 
 Professor Howard Roatti
 
-✨ Funcionalidades (C3)
+ Funcionalidades (C3)
 
 Banco de Dados NoSQL O sistema foi 100% migrado do MySQL para o MongoDB.
 
@@ -34,21 +34,21 @@ Vacina
 
 RegistroEfeitoAdverso
 
-Script de Migração (Item 4) Um script (Migracao.java) foi criado para ler todos os dados do banco relacional (C2) e inseri-los corretamente no banco não-relacional (C3).
+Script de Migração  Um script (Migracao.java) foi criado para ler todos os dados do banco relacional (C2) e inseri-los corretamente no banco não-relacional (C3).
 
-Relatórios Complexos (Item 7.a)
+Relatórios Complexos 
 
 Relatório com Junção ($lookup) Lista os efeitos adversos, trazendo o nome do usuário e o nome da vacina (simulando um JOIN triplo).
 
 Relatório com Agrupamento ($project$size) Lista todas as vacinas e conta quantos registros de efeitos adversos cada uma possui (simulando um LEFT JOIN + GROUP BY + COUNT).
 
-Verificação de Integridade (Item 7.c.5.i) O sistema impede que um Usuario ou uma Vacina sejam removidos se existirem Registros (filhos) associados a eles, protegendo a integridade dos dados.
+Verificação de Integridade  O sistema impede que um Usuario ou uma Vacina sejam removidos se existirem Registros (filhos) associados a eles, protegendo a integridade dos dados.
 
-Splash Screen (Item 6.b) Tela de início que exibe os nomes dos componentes e a contagem de documentos em cada coleção do MongoDB.
+Splash Screen  Tela de início que exibe os nomes dos componentes e a contagem de documentos em cada coleção do MongoDB.
 
-Menu Dinâmico (Item 6.a) Menu principal em loop que segue a estrutura exigida pelo edital.
+Menu Dinâmico  Menu principal em loop que segue a estrutura exigida pelo edital.
 
-🛠️ Tecnologias Utilizadas
+ Tecnologias Utilizadas
 
 Java 1.8+
 
@@ -58,7 +58,7 @@ MongoDB Banco de dados NoSQL principal.
 
 MySQL Usado apenas como fonte de dados para o script de migração.
 
-⚠️ Pré-requisitos
+ Pré-requisitos
 
 Para executar este projeto, você DEVE ter os seguintes serviços instalados e rodando
 
@@ -70,7 +70,7 @@ Servidor MongoDB Rodando localmente na porta padrão (mongodblocalhost27017).
 
 Servidor MySQL Rodando localmente (localhost3306) e com o banco monitor_vacina_db da C2 (com dados) populado. (Obrigatório apenas para o Passo 1 da execução).
 
-🚀 Como Executar o Projeto (Linux  Windows  macOS)
+ Como Executar o Projeto (Linux  Windows  macOS)
 
 Este projeto é gerenciado pelo Maven, então a execução é feita pelo terminal.
 
@@ -108,7 +108,7 @@ mvn execjava -Dexec.mainClass=br.com.faesa.monitorvacina.principal.Principal
 
 O Splash Screen aparecerá, seguido do menu principal, e o sistema estará pronto para uso.
 
-🗂️ Estrutura de Pastas (Simplificada)
+Estrutura de Pastas (Simplificada)
 
 srcmainjavabrcomfaesamonitorvacina
 
